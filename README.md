@@ -22,9 +22,15 @@ Feel free to modify for ur needs!
 4. **Create .env**
 
     ```
-        AI_MODEL= 
+        AI_MODEL=
+
+        GORQ_URL=
         GORQ_API_KEY= 
+
+        OPEN_WEATHER_URL=
         OPEN_WEATHER_API_KEY=
+
+        NEWS_API_URL=
         NEWS_API_KEY=
     ```
 

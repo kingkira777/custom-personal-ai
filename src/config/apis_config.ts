@@ -1,9 +1,9 @@
 require('dotenv').config();
 import OpenAI from "openai";
 
-const aiUrl = "https://api.groq.com/openai/v1/";
-const weatherUrl = "https://api.openweathermap.org/data/2.5/weather";
-const news_Url = "https://newsapi.org/v2/everything";
+const aiUrl = process.env.GORQ_URL || "";
+const weatherUrl = process.env.OPEN_WEATHER_URL ||"";
+const news_Url = process.env.NEWS_API_URL || "";
 
 
 // const weatherApiKey = process.env.OPEN_WEATHER_API_KEY;

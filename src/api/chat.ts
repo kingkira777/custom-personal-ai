@@ -1,5 +1,5 @@
 import express from 'express';
-import ChatAi from '../libs/personal-aiv2';
+import ChatAi from '../libs/personal-ai';
 
 const router = express.Router();
 
