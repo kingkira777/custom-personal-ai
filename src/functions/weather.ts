@@ -22,7 +22,6 @@ export const weather: IFunction = {
     },
     async execute(args: any) {
       return await weatherApi(
-        "d9f5017e4fb8172d47d5a32ea33356c4",
         args.latitude,
         args.longitude
       );

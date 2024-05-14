@@ -1,10 +1,9 @@
 import { openAi } from "../config/apis_config";
 import { FunctionHandler } from "../functions";
 
+const model = process.env.AI_MODEL || "llama3-70b-8192"
+
 type IBody = {
-    gorqApi : string;
-    weatherApi: string;
-    newsApi : string;
     currentDate: string;
     userInput: string;
     location : {
@@ -38,8 +37,8 @@ const ChatAi  = async (req:IBody) => {
         }   
     ];
 
-    const response = await openAi(req.gorqApi).chat.completions.create({
-        model : 'llama3-70b-8192',
+    const response = await openAi().chat.completions.create({
+        model : model,
         messages : messages,
         tools : FunctionHandler.funcitons
     });
@@ -61,8 +60,8 @@ const ChatAi  = async (req:IBody) => {
                 content : result
             });
 
-            const sec_res =  await openAi(req.gorqApi).chat.completions.create({
-                model : 'llama3-70b-8192',
+            const sec_res =  await openAi().chat.completions.create({
+                model : model,
                 messages : messages    
             });
 

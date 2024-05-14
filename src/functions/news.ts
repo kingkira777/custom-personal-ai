@@ -15,7 +15,6 @@ export const news: IFunction = {
     },
     async execute(args: any) {
       return await newsApi(
-        "c1f4519f50c7454baa69bf626d024c56",
         args.question
       );
     },
