@@ -32,3 +32,17 @@ Feel free to modify for ur needs!
 4. **Run the Program**
     - Run `npm run dev` for development
     - Run `npm run build` for Production
+
+    
+4. **Access using your preferred API Testing tool like POSTMAN**
+    - Navigate to `localhost:5000/api/v1/personal-ai`
+    ```json
+        {
+            "currentDate" : "2024-05-14",
+            "location" : {
+                "lat" : "14.532808893683674",
+                "lon" : "120.98241277898677"
+            },
+            "userInput" : "What is the raduis of earth?"
+        }
+    ```
