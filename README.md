@@ -35,7 +35,8 @@ Feel free to modify for ur needs!
 
     
 4. **Access using your preferred API Testing tool like POSTMAN**
-    - Navigate to `localhost:5000/api/v1/personal-ai`
+    - POST REQUEST & PAYLOAD
+    - Navigate to `localhost:5000/api/v1/personal-ai` 
     ```json
         {
             "currentDate" : "2024-05-14",
