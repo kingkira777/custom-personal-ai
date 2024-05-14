@@ -21,7 +21,6 @@ const ChatAi  = async (req:IBody) => {
         Don't respond with computer code, for example don't return user longitude.
 
         User's current info:
-        country: Philippines,
         date: ${req.currentDate}
         lat:${req.location.lat}, lon:${req.location.lon}
     `;
